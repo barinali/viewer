@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Viewer",
+  "author": "Ali Barın",
+  "homepage_url": "http://alibarin.com.tr",
+  "description": "This extension is built for a scrum master colleague",
+  "version": "1.0",
+  "permissions": [
+    "webview"
+  ],
+  "app": {
+    "background": {
+      "scripts": ["src/scripts/background-app.js"]
+    }
+  },
+  "icons" : {
+    "128" : "src/images/favicon-128.png",
+    "16" : "src/images/favicon-16.png"
+  }
+}

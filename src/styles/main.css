@@ -1,0 +1,87 @@
+@import "grid.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font: 14px 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+a, a:active, a:hover {
+  color: #000;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.tabs {
+  background: #eee;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  padding-right: 0;
+  position: relative;
+}
+
+.tabs-title {
+  background: #999;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.tab-link {
+  background: #ddd;
+  border-left: 5px solid transparent;
+  display: block;
+  padding: 10px 5px 10px 15px;
+}
+
+.tab-link.active, .tab-link:hover {
+  border-left-color: #00adef;
+  font-weight: 700;
+}
+
+.add-new {
+  border: 0;
+  bottom: 0;
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.add-new:hover {
+  background: #fff;
+}
+
+.view {
+  height: 100vh;
+  display: none !important;
+  padding: 0;
+  width: 100%;
+}
+
+.view.active {
+  display: block !important;
+}
+
+iframe {
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.add-form {
+  margin: 30px 0 0 10px;
+}

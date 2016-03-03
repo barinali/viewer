@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Viewer</title>
+
+    <link rel="stylesheet" href="styles/main.css" media="screen">
+
+  </head>
+  <body>
+
+  <div class="wrapper">
+    <div class="grid">
+      <div id="tabs" class="tabs col-2">
+        <h2 class="tabs-title">Tabs</h2>
+
+        <div id="tab-list">
+
+        </div>
+
+        <form class="hidden add-form">
+          <input type="text" name="title" placeholder="title">
+          <input type="text" name="url" placeholder="url">
+
+          <br>
+
+          <button class="add-button" type="button">Add Tab</button>
+
+        </form>
+
+        <a class="tab-link add-new" href="javascript:;">+ new tab</a>
+      </div>
+
+      <div id="view-list" class="col-10">
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/dexie.min.js" charset="utf-8"></script>
+  <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+</html>
